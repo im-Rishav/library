@@ -1,0 +1,28 @@
+<!-- <div *ngIf="applets.length > 0; else noResults">
+  <ul class="list-group">
+    <li *ngFor="let app of applets; trackBy: trackByFn" class="list-group-item"> {{ app.name }} </li>
+  </ul>
+</div> <ng-template #noResults>
+  <p class="text-muted">No applets found.</p>
+</ng-template>
+
+
+ -->
+
+ <div *ngIf="applets.length > 0; else noResults" style="height:100%">
+  <cdk-virtual-scroll-viewport itemSize="50" class="list-container">
+    <ul class="list-group">
+      <li *cdkVirtualFor="let app of applets; trackBy: trackByFn"
+          class="list-group-item">
+        {{ app.name }}
+      </li>
+    </ul>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+<ng-template #noResults>
+  <p class="text-muted">No applets found.</p>
+</ng-template>
+
+
+

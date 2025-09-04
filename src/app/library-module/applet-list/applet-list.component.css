@@ -1,0 +1,5 @@
+.list-container {
+  height: 100%;   /* adjust as needed */
+  width: 100%;
+  overflow: auto;
+}

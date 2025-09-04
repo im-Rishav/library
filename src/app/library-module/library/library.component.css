@@ -1,0 +1,82 @@
+.my-container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  height:100vh;
+  /* background-color: red; */
+}
+
+.my-header {
+  /* margin-bottom: 1rem; */
+  width:100%;
+  height:7%;
+    /* background-color: yellow; */
+}
+
+.my-header h3 {
+  margin: 0;
+}
+
+.my-layout {
+  display: flex;
+  gap: 1rem;
+  height: 95%;
+  overflow: hidden;
+}
+
+.my-sidebar {
+  flex: 0 0 25%; /* same as col-3 */
+  display: flex;
+  flex-direction: column;
+  height:98%;
+  /* background-color: grey; */
+}
+
+.my-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  height:10%;
+}
+app-search{
+    height:10%;
+    width:98%;
+    margin-left:1%;
+}
+app-category-list{
+    height:80%;
+    overflow: auto;
+}
+.my-content {
+  flex: 1; /* same as col-9 */
+  display: flex;
+  flex-direction: column;
+  height:98%;
+  /* background-color: yellow; */
+}
+
+.my-content-header {
+  margin-bottom: 0.5rem;
+    height:10%;
+}
+
+app-applet-list{
+    height:90%;
+    overflow:auto;
+}
+
+.my-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.my-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,34 @@
+<div class="my-container">
+  <div class="my-header">
+    <h3>Library</h3>
+  </div>
+
+  <div class="my-layout">
+    <!-- Sidebar -->
+    <div class="my-sidebar">
+      <div class="my-sidebar-header">
+        <h5>Categories</h5>
+        <button class="my-btn" (click)="addMoreData()">
+          Add Big Data
+        </button>
+      </div>
+
+      <app-search (search)="onSearch($event)"></app-search>
+
+      <app-category-list
+        [categories]="filteredCategories"
+        [applets]="applets"
+        (selectCategory)="onCategorySelect($event)">
+      </app-category-list>
+    </div>
+
+    <!-- Main content -->
+    <div class="my-content">
+      <div class="my-content-header">
+        <h5>Applets</h5>
+      </div>
+
+      <app-applet-list [applets]="filteredApplets"></app-applet-list>
+    </div>
+  </div>
+</div>
