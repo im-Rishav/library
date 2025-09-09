@@ -1,20 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
-export interface Applet {
-  name: string;
-  categories: string[];
-}
-
-export interface Library {
-  categories: string[];
-  applets: Applet[];
-}
-
-export interface CategoryWithCount {
-  category: string;
-  count: number;
-}
+import { Applet, Library } from '../Models/interfaces';
 
 @Injectable({
   providedIn: 'root'

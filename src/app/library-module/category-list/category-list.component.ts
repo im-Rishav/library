@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
-import { Applet, CategoryWithCount } from '../library.service';
+import { Applet, CategoryWithCount } from '../Common/Models/interfaces';
 
 @Component({
   selector: 'app-category-list',

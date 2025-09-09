@@ -25,7 +25,7 @@
 }
 
 .my-sidebar {
-  flex: 0 0 25%; /* same as col-3 */
+  flex: 0 0 25%; 
   display: flex;
   flex-direction: column;
   height:98%;
@@ -49,7 +49,7 @@ app-category-list{
     overflow: auto;
 }
 .my-content {
-  flex: 1; /* same as col-9 */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   height:98%;
@@ -74,7 +74,6 @@ app-applet-list{
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .my-btn:hover {

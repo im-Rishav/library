@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Applet } from '../library.service';
+import { Applet } from '../Common/Models/interfaces';
 
 @Component({
   selector: 'app-applet-list',

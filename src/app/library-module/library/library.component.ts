@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Applet, LibraryService } from '../library.service';
+import { Applet } from '../Common/Models/interfaces';
+import { LibraryService } from '../Common/Services/library.service';
 
 @Component({
   selector: 'app-library',
