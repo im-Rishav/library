@@ -18,9 +18,6 @@ private lib: Library = {
   private librarySubject = new BehaviorSubject<Library>(this.lib);
   library$ = this.librarySubject.asObservable();
 
-  getLibrary(): Library {
-    return this.lib;
-  }
 
   addBigData(ncategs: number, napplets: number): void {
     for (let i = 0; i < ncategs; i++) {
@@ -35,7 +32,10 @@ private lib: Library = {
       }
       this.lib.applets.push(a);
     }
-    debugger;
-    this.librarySubject.next(this.lib);
+    
+    this.librarySubject.next({
+      categories:[...this.lib.categories],
+      applets:[...this.lib.applets]
+    });
   }
 }
